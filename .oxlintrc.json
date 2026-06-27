@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "import"],
+  "categories": {
+    "correctness": "error"
+  },
+  "rules": {
+    "oxc/approx-constant": "error",
+    "oxc/bad-bitwise-operator": "error",
+    "oxc/no-map-spread": "error",
+    "import/consistent-type-specifier-style": "error",
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "import/no-duplicates": "error",
+    "import/exports-last": "error",
+    "unicorn/prefer-spread": "error",
+    "unicorn/prefer-array-flat-map": "error"
+  },
+  "env": {
+    "builtin": true
+  }
+}
